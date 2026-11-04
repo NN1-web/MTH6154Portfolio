@@ -8,7 +8,7 @@ module MTH6154 Financial Mathematics I.
 | Week | Lesson | Notes | Spreadsheet |
 |---|---|---|---|
 | 1 | Interest rates | [notes](01-InterestRates.md) | [xlsx](spreadsheets/01-InterestRates.xlsx) |
-| 2 | Present value | [notes](lessons/02-PresentValue.md) | [xlsx](spreadsheets/02-PresentValue.xlsx) |
+| 2 | Present value | [notes](02-PresentValue.md) | [xlsx](spreadsheets/02-PresentValue.xlsx) |
 | 3 | Immunisation | | |
 | 4 | Bonds | | |
 | 5 | Stochastic interest rates | | |
