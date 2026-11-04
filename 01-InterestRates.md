@@ -1,6 +1,6 @@
 # 1. Interest rates
 
-[Back to contents](../README.md)
+[Back to contents](README.md)
 
 ## Summary
 
