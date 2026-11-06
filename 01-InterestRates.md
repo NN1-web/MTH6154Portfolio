@@ -11,7 +11,7 @@
 - Yield curve
 - Annual percentage rate
 - Continuously compounded interest rates
-- Real rate
+- [Real rate](https://github.com/NN1-web/MTH6154Portfolio/blob/60b1c02967eeb7b4673d837fe3ce3e904f6e7d5f/01-InterestRates.md#L42)
 
 
 
