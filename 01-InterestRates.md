@@ -13,10 +13,15 @@
 - Continuously compounded interest rates
 - [Real rate](https://github.com/NN1-web/MTH6154Portfolio/blob/60b1c02967eeb7b4673d837fe3ce3e904f6e7d5f/01-InterestRates.md#L42)
 
+**Base Rate**
 
+Central Banks set a Base interest rate - this is the rate for overnight deposits. This base rate is intended only for certain institutions. The return on deposits are annualised, and this is referred to as the annualised return, $R=rt$. Annualised interest rates are therefore $r=R/t$.
 
+The Base rate is used in certain institutions, but other bodies also deposit/loan. Transactions at different rates occur between these different institutions.
 
+**SONIA/Instantaneous rate**
 
+SONIA - Sterling overnight Index Average, this is the average of the different interest rates used in all transactions over night. Hence, this is the instantaneous rate for that night, valid for this overnight period. 
 
 
 In your own words, the main ideas of the lesson. Short sentences are fine.
