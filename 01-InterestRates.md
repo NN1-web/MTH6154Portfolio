@@ -75,6 +75,8 @@ $$
 \left(1+\frac{i^{(m)}}{m}\right)^m = 1+i
 $$
 
+Or more commonly written, 
+
 ## My example
 
 A situation you made up (your own numbers, not the ones in the lecture
