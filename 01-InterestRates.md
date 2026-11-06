@@ -64,6 +64,12 @@ $$
 £P*e^{\int_0^\t \mathrm{r(t)}\,\mathrm{d}t}
 $$
 
+Or more commonly written, where T is the time when the deposit is paid to us
+
+$$
+£P*e^{(\frac{1}{T}\int_0^\t \mathrm{r(t)}\,\mathrm{d}t)T}, or £P*e^{\bar{a}*T}
+$$
+
 
 In your own words, the main ideas of the lesson. Short sentences are fine.
 
@@ -75,7 +81,7 @@ $$
 \left(1+\frac{i^{(m)}}{m}\right)^m = 1+i
 $$
 
-Or more commonly written, 
+
 
 ## My example
 
