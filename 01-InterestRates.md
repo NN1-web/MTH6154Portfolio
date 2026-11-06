@@ -11,7 +11,7 @@
 - Yield curve
 - Annual percentage rate
 - Continuously compounded interest rates
-- [Real rate](https://github.com/NN1-web/MTH6154Portfolio/blob/60b1c02967eeb7b4673d837fe3ce3e904f6e7d5f/01-InterestRates.md#L42)
+- Real rate
 
 **Base Rate**
 
@@ -61,25 +61,39 @@ But this only gives us the picture for one r, we want to model when this r chang
 Thus, we repeat the same steps for when r is a function of t, r(t). Through some more maths and confusing calculus, we discover that it can be modelled by this 
 
 $$
-£P*e^{\int_0^\t \mathrm{r(t)}\,\mathrm{d}t}
+£P*e^{\int_0^\{t} \mathrm{r(t)}\,\mathrm{d}t}
 $$
 
 Or more commonly written, where T is the time when the deposit is paid to us
 
 $$
-£P*e^{(\frac{1}{T}\int_0^\t \mathrm{r(t)}\,\mathrm{d}t)T}, or £P*e^{\bar{a}*T}
-$$
+£P*e^{(\frac{1}{T}\int_0^\{t} \mathrm{r(t)}\,\mathrm{d}t)T}
+$$ 
 
-
-In your own words, the main ideas of the lesson. Short sentences are fine.
-
-
-Maths is written between dollar signs. For example `$A = P(1+i)^n$` shows
-as $A = P(1+i)^n$, and a displayed formula uses double dollars:
+or 
 
 $$
-\left(1+\frac{i^{(m)}}{m}\right)^m = 1+i
+£P*e^{\bar{r}T}$$ where $$\bar{r}=\frac{1}{T}\int_0^\{t} \mathrm{r(t)}\,\mathrm{d}t
 $$
+
+$\bar{r}$= rate for maturity T (i/r for a deposit to time T), $\bar{r}$ as a function of T, $\bar{r}(T)$, is equal to the yield curve. This function is equivalent to the average of all instantaneous rates.
+
+**Annual percentage rate**
+
+This annualises a rate offered to you, and gives you its effective rate for 1 year, i.e. it gives you the rate equivalent to holding a 1 year debt of the rate offered to you. 
+
+**Real rate**
+
+The inflation rate is calculated using the CPI (consumer price index)
+
+$\pi_t=\frac{CPI_t-CPI_{t-1}}{CPI_{t-1}}$
+
+Inflation degrades the value of money as time goes on (or increases it with deflation), this then in turn degraded the real value of your returns.
+Therefore, taking into account inflation, the real i/r is
+
+$r=\frac{1+i}{1+\pi}-1$
+where $i$ = nominal i/r, $\pi$ = inflation rate.
+
 
 
 
