@@ -4,6 +4,21 @@
 
 ## Summary
 
+**Topics covered this week include:** 
+- Base rate
+- SONIA/Instantaneous rate
+- Compounding rate
+- Yield curve
+- Annual percentage rate
+- Continuously compounded interest rates
+- Real rate
+
+
+
+
+
+
+
 In your own words, the main ideas of the lesson. Short sentences are fine.
 
 Maths is written between dollar signs. For example `$A = P(1+i)^n$` shows
@@ -23,6 +38,8 @@ notes), worked step by step.
 ### Exercise 1.x (from Exercise Sheet 1)
 
 Question, then your solution.
+
+Real rate
 
 ## Spreadsheet
 
