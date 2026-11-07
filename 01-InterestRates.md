@@ -95,9 +95,19 @@ $r=\frac{1+i}{1+\pi}-1$
 where $i$ = nominal i/r, $\pi$ = inflation rate.
 
 
-
-
 ## My example
+
+Yield curve example:
+
+Find the yield curve equation for r(t) = $\frac{1}{t}+0.075+0.009t$
+
+Firstly, calculate $\bar{r}(t)$. $\bar{r}(t)$ is equal to the integral of r(t)*$\frac{1}{T}$
+
+$\bar{r}(t)$ = $\frac{1}{T}(\int_0^\{t} \mathrm{\frac{1}{t}+0.075+0.009t}\)\mathrm{d}t$
+             = $\frac{1}{T}(\ln (T)+0.075T+\frac{0.009}{2}T^2)$
+             = $\frac{\ln (t)}{T}+0.075+\frac{0.009}{2}T$
+             
+
 
 A situation you made up (your own numbers, not the ones in the lecture
 notes), worked step by step.
