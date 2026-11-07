@@ -105,7 +105,7 @@ Firstly, calculate $\bar{r}(t)$. $\bar{r}(t)$ is equal to the integral of r(t)*$
 
 $\bar{r}(t)$ = $\frac{1}{T}(\int_0^\{t} \mathrm{\frac{1}{t}+0.075+0.009t}\)\mathrm{d}t$
              = $\frac{1}{T}(\ln (T)+0.075T+\frac{0.009}{2}T^2)$
-             = $\frac{\ln (t)}{T}+0.075+\frac{0.009}{2}T$
+             = $\frac{\ln (T)}{T}+0.075+\frac{0.009}{2}T$
              
 
 
