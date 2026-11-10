@@ -101,11 +101,15 @@ Yield curve example:
 
 Find the yield curve equation for r(t) = $\frac{1}{t}+0.075+0.009t$
 
-Firstly, calculate $\bar{r}(t)$. $\bar{r}(t)$ is equal to the integral of r(t)*$\frac{1}{T}$
+Firstly, calculate $\bar{r}(t)$. $\bar{r}(t)$ is equal to the integral of $r(t)*\frac{1}{T}$
 
 $\bar{r}(t)$ = $\frac{1}{T}(\int_0^\{t} \mathrm{\frac{1}{t}+0.075+0.009t}\)\mathrm{d}t$
              = $\frac{1}{T}(\ln (T)+0.075T+\frac{0.009}{2}T^2)$
              = $\frac{\ln (T)}{T}+0.075+\frac{0.009}{2}T$
+
+If you deposited £3560 into a bank, how much will it pay out in 10 years time?
+
+To calculate this, we need the equation referenced above, $\bar{r}(t)$, P and T. £P=£3560, T=10 and $\bar{r}(t)$ = $\frac{\ln (T)}{T}+0.075+\frac{0.009}{2}T$
              
 
 
