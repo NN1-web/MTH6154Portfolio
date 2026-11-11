@@ -135,7 +135,41 @@ a)iii) convert to semi-annually - $£700*(1+0.03*\frac{1}{2})^6 \approx 765.41$
 
 a)iv) use continuously compounded formula - $e^{rt}$, $£700*e^{0.03*3} \approx 765.92$
 
+(b) Find the effective interest rates for each case (i)–(iv) from part (a).
 
+b)i) the effective i/r is annualised i/r for the rate given, it is the how much return that rate gives in a year. for i) the rate is already annualised, therefore the effective rate is simply 3%. we can use the formula0.0305 to check: the rate given annualised minus 1.
+$(1+0.03)-1=0.03$
+
+b)ii) the rate given annualised - $(1+\frac{0.03}{12})^12-1 \approx 0.0304$
+
+b)iii) $(1+\frac{0.03}{2})^2-1 \approx 0.0302$
+
+b)iv) set t = 1, $e^{0.03}-1 \approx 0.0305$
+
+(c)Suppose the inflation rate is 2%. Calculate the ‘inflation adjusted interest rate’ for each case (i)–(iv) from part (a).
+
+c)i) the inflation adjusted i/r is simply the real rate, for this we can use the formula referenced above - $r=\frac{1+i}{1+\pi}-1$, where $i$ = nominal i/r, $\pi$ = inflation rate.
+Therefore, the real rate is equal to $r=\frac{1+0.03}{1+0.02}-1 \approx 0.009804$
+
+c)ii) we use the effective rate for one year for the rest of the questions. $r=\frac{1+0.0304}{1+0.02}-1 \approx 0.0102$
+
+c)iii) $r=\frac{1+0.0302}{1+0.02}-1 \approx 0.01$
+
+c)iv) $r=\frac{1+0.0305}{1+0.02}-1 \approx 0.01029$
+
+(d) Suppose interest is compounded semi-annually. How long will it take for the bank balance to grow to £1000?
+
+d) now we focus on the way we calculated semi-annually compounded rates in part iii) and work backwards with time t as the unknown. remembering that t in semi-annual rates is equal to 1/2 of a year.
+
+$$£700*(1+\frac{0.03}{2})^t=£100$$
+
+$$(1+\frac{0.03}{2})^t=£10/7$$
+
+$$t*\log(1+0.03/2)=\log(10/7)$$
+
+$$\therefore t=\frac{\log(10/7)}{\log(1+0.03/2)} \approx 23.956$$
+
+$$t/2 \approx 11.978 years$$
 
 
 
