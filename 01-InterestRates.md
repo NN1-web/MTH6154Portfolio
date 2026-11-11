@@ -110,19 +110,31 @@ $\bar{r}(t)$ = $\frac{1}{T}(\int_0^\{t} \mathrm{\frac{1}{t}+0.075+0.009t}\)\math
 If you deposited £3560 into a bank, how much will it pay out in 10 years time?
 
 To calculate this, we need the equation referenced above, $\bar{r}(t)$, P and T. £P=£3560, T=10 and $\bar{r}(t)$ = $\frac{\ln (T)}{T}+0.075+\frac{0.009}{2}T$
+
+Therefore, the pay out is equal to $£3560*(e^{(\frac{\ln (10)}{10}+0.075+\frac{0.009}{2}10)10})$, in 10 years time.
              
-
-
-A situation you made up (your own numbers, not the ones in the lecture
-notes), worked step by step.
-
 ## Solved exercises
 
-### Exercise 1.x (from Exercise Sheet 1)
+### Exercise 1.1 (from Exercise Sheet 1)
 
-Question, then your solution.
+Suppose you put £700 in a bank account with nominal interest rate 3%. 
+(a) How much money will be in the bank account three years from now if the interest is:
+(i)Compounded annually?
+(ii)Compounded monthly?
+(iii)Compounded semi-annually?
+(iv)Compounded continuously?
 
-Real rate
+Solutions:
+a)i) we use this formula referenced in the notes earlier: $(1+r*\frac{1}{365})^m$, this was adjusted to give a daily rate as interest rates are normally given annually, we need to change this back to an annual rate. 
+Thus the new formula is - $(1+r)^t$, with t = years instead. 
+Using the formula we obtain - $£700*(1+0.03)^3 \approx 764.91$
+
+a)ii) now convert to monthly rates - $(1+r*\frac{1}{12})^n$, with n= months instead. Therefore, solution - $£700*((1+0.03*\frac{1}{12})^{36} \approx 765.84$
+
+a)iii) convert to semi-annually - $£700*(1+0.03*\frac{1}{2})^6 \approx 765.41$
+
+
+
 
 ## Spreadsheet
 
