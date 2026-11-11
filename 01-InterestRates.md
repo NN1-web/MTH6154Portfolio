@@ -133,6 +133,10 @@ a)ii) now convert to monthly rates - $(1+r*\frac{1}{12})^n$, with n= months inst
 
 a)iii) convert to semi-annually - $£700*(1+0.03*\frac{1}{2})^6 \approx 765.41$
 
+a)iv) use continuously compounded formula - $e^{rt}$, $£700*e^{0.03*3} \approx 765.92$
+
+
+
 
 
 
