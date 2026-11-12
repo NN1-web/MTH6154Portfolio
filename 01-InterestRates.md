@@ -171,8 +171,19 @@ $$\therefore t=\frac{\log(10/7)}{\log(1+0.03/2)} \approx 23.956$$
 
 $$t/2 \approx 11.978 years$$
 
+### Exercise 1.3 (from Exercise Sheet 1)
 
+Suppose $P$ is deposited in a bank account with interest continuously compounded at rate $r(t)$. Write down an expression, in terms of 
+$r(t)$, for:
+(a)The yield curve $\bar{r}(t)$.
 
+(b)The bank balance at time $T$.
+
+a) using the reasoning used in the notes earlier, $$\bar{r}=\frac{1}{T}\int_0^\{t} \mathrm{r(t)}\,\mathrm{d}t$$, $\bar{r}(t)$ is basically the average of different i/r in the time period.
+
+b) using the reasoning in the notes earlier, bank balance at time T would be equal to, the return of the investment - using continuously compounded rates in terms of r(t), times by the orginal amount of money - here notated as £P.
+
+Thus the bank balance at time T is equal to - $$£P*e^{(\frac{1}{T}\int_0^\{t} \mathrm{r(t)}\,\mathrm{d}t)T}$$ 
 
 ## Spreadsheet
 
