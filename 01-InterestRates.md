@@ -187,5 +187,8 @@ Thus the bank balance at time T is equal to - $$£P*e^{(\frac{1}{T}\int_0^\{t} \
 
 ## Spreadsheet
 
-[01-InterestRates.xlsx](../spreadsheets/01-InterestRates.xlsx): what it
-does, which cells to change and what to look at.
+[01-InterestRates.xlsx](../spreadsheets/01-InterestRates.xlsx):
+
+This excel file, calculates the return of a deposit £P after time t and the new payoff of different i/r which are Compounded annually, Compounded monthly, Compounded semi-annually, Compounded continuously.
+
+You need to input three variables: in cell B7 input r, cell B8 input t, cell B9 input P.
