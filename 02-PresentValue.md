@@ -48,6 +48,18 @@ Multiple cashflows are referred to as balanced, net to zero or flat iff NPV=0 or
 
 ## My example
 
+Say we deposited £800 in a bank, the annualised i/r given to us is 3%. I would like to take out these cashflows in the future. In year 1, I take out £500. In year 2, I take out $350. 
+Calculate if the i/r given to me is a good deal or not, using the IRR method.
+
+Using equation we get:
+
+$$800-\frac{500}{(1+r)}-\frac{350}{(1+r)^2}=0$$
+
+$$Let \frac{1}{1+r}=x$$
+
+$$\therefore 800-500x-350x^2=0$$
+                                                                                                                                                                                          
+
 A situation you made up (your own numbers, not the ones in the lecture
 notes), worked step by step.
 
