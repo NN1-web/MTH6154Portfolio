@@ -58,16 +58,59 @@ $$800-\frac{500}{(1+r)}-\frac{350}{(1+r)^2}=0$$
 $$Let \frac{1}{1+r}=x$$
 
 $$\therefore 800-500x-350x^2=0$$
-                                                                                                                                                                                          
 
-A situation you made up (your own numbers, not the ones in the lecture
-notes), worked step by step.
+$$x\approx0.95781 or x\approx-2.38639$$
 
+$$\frac{1}{(1+r)}=0.95781 or =-2.38639$$
+
+$$\therefore r=0.044048 or r=-1.41904$$, since i/r cannot be -ve we disregard this number
+
+$$thus, as IRR=0.044048>0.03$$, this given i/r is a good deal
+                                        
 ## Solved exercises
 
-### Exercise 1.x (from Exercise Sheet 1)
+### Exercise 2.1 (from Exercise Sheet 2)
 
-Question, then your solution.
+
+
+1) Use the formula mentioned above, $$1000-\frac{500}{(1+r)^2}-\frac{750}{(1+r)^4}=0$$
+
+let $$x=\frac{1}{(1+r)^2}$$
+
+then $$1000-500x-750x^2=0$$
+
+$$x\approx0.868517 or x\approx-1.53518$$
+
+$$then, \frac{1}{(1+r)^2}=0.868517 or =—1.53518$$
+
+$$\therefore r=0.0730275$$ as sort of -ve undefined in this course.
+
+IRR=0.0730275 or 7.303%
+
+###Exercise 2.2 (from Exercise sheet 2)
+
+2) using the NPV formula in the notes above,
+
+For A, $$NPV_{A}= £65000D(1)+£75000D(2)+£115000D(3)$$
+
+For B, $$NPV_{B}= £15000+£79000D(1)+£79000D(2)+£79000D(3)$$
+
+2)i) for an annually compounded i/r, D(t)= $\frac{1}{(1+0.0375)^t}$, now replace this formula with the D(t) in both company A and B. 
+
+The formula written out for Company A - $$NPV_{A}= £65000\frac{1}{(1+0.0375)}+£75000\frac{1}{(1+0.0375)^2}+£115000\frac{1}{(1+0.0375)^3}$$
+
+$$\therefore NPV_{A}\approx£235302.31$$
+
+2)i)Company B) $$NPV_{B}\approx£235276.57$$
+
+Thus, Company A offers the better deal with an annually compounded i/r, since $NPV_{A}>NPV_{B}$
+
+2)ii) for continuously compounded i/r, D(t)= $e^{-0.0375*t}$, do as previously.
+
+Company A) $NPV_{A}= £234952.09$
+Company B) $NPV_{B}= £234978.28$
+
+Thus, Company B offers a better deal with a continuously compounded i/r, as $NPV_{A}<NPV_{B}$ 
 
 ## Spreadsheet
 
