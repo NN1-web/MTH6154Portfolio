@@ -114,5 +114,5 @@ Thus, Company B offers a better deal with a continuously compounded i/r, as $NPV
 
 ## Spreadsheet
 
-[01-InterestRates.xlsx](../spreadsheets/01-InterestRates.xlsx): what it
-does, which cells to change and what to look at.
+[02-PresentValue.xlsx](../spreadsheets/02-PresentValue.xlsx): This calculates the NPV for three cashflows over three years, with four differently compounded i/r.
+You change C2, D2 and E2 - with the consecutive cashflows. You change G2, for your chosen i/r. The column B5-8, give the corresponding NPV values. 
