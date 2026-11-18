@@ -21,13 +21,37 @@ Consider this series of cashflows:
 - Deposit of £X
 - Cash in flow of £3000, in year 1
 - Cash out flow of Y
-- Cash in flow of Z
+- Cash in flow of £600
 
-Using continuously compounded i/r and r=2.5%, figure out X,Y,Z such that these cashflows are both 0 and 1st order immune and then evaluate whether or not they are Reddington immune.
+Using continuously compounded i/r and r=2.5%, figure out X,Y such that these cashflows are both 0 and 1st order immune and then evaluate whether or not they are Reddington immune.
 
 Firstly, we start with the NPV equation, 
 
-$$NPV(r)=X+3000* D(1)-Y* D(2)+Z*D(3)$$
+$$NPV(r)=X+3000* D(1)-Y* D(2)+600*D(3)$$
+
+The i/r is continuously compounding, therefore $D(t)=e^{-rt}$
+
+Subbing this into the equation, we get $NPV(r)=X+3000e^{-r}-Ye^{-2r}+600e^{-3r}$
+
+For 0-order immunisation, NPV=0 & r=2.5%. 
+
+1. $$0=X+3000e^{-0.025}-Ye^{-0.05}+600e^{-0.075}$$
+
+For 1st-order immunisation, NPV'=0.
+
+$$NPV'(r)=X-3000e^{-r}+2Ye^{-2r}-1800e^{-3r}$$ So, 2. $$0=X-3000e^{-0.025}+2Ye^{-0.05}-1800e^{-0.075}$$
+
+We now use equation 1 and 2 to solve for the variables X and Y. 
+
+Equation 1*2 plus equation 2, gives us - $$X=200e^{-0.075}-1000e^{-0.025}$$
+and therefore $$Y=\frac{800e^{-0.075}+2000e^{-0.025}}{e^{-0.05}}$$
+
+To see if these cashflows are Reddington Immune, we need to calculate NPV''(r).
+
+$$NPV(r)=X+3000e^{-r}-4Ye^{-2r}+5400e^{-3r}$$, when r=2.5% - $$NPV(0.025)=X+3000e^{-0.025}-4Ye^{-0.05}+5400e^{-0.075}$$, subbing in X and Y.
+$$NPV(0.025)=200e^{-0.075}-1000e^{-0.025}+3000e^{-0.025}-3200e^{-0.075}+8000e^{-0.025}+5400e^{-0.075}$$ ?? check notes if he subbed in a and b
+
+
 
              
 ## Solved exercises
