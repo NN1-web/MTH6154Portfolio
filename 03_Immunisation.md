@@ -9,27 +9,26 @@
 The NPV of different cashflows are dependent on r - NPV goes down and up when r changes. This is market risk, to try and control this unpredictability, we need the NPV to conform to certian conditions - this is called Reddington immunisation.
 
 For cashflows to be hedged against risk and be considered Reddington immune, must fulfill these conditions:
+- $NPV(r_{0})=0$ (0-order immune)
+- $NPV'(r_{0})=0$ (1-order immune)
+- $NPV''(r_{0})\geq0$
 
-
-
+Which means the $NPV(r_{0})$ function looks like a +ve quadratic function, the NPV=0 where $r=r_{0}$. This immunisation only accounts for changes in r close to the $r_{0}$ value, with large changes the function is different, and thus the NPV is no longer guaranteed hedged. 
 
 ## My example
 
-Yield curve example:
+Consider this series of cashflows:
+- Deposit of £X
+- Cash in flow of £3000, in year 1
+- Cash out flow of Y
+- Cash in flow of Z
 
-Find the yield curve equation for r(t) = $\frac{1}{t}+0.075+0.009t$
+Using continuously compounded i/r and r=2.5%, figure out X,Y,Z such that these cashflows are both 0 and 1st order immune and then evaluate whether or not they are Reddington immune.
 
-Firstly, calculate $\bar{r}(t)$. $\bar{r}(t)$ is equal to the integral of $r(t)*\frac{1}{T}$
+Firstly, we start with the NPV equation, 
 
-$\bar{r}(t)$ = $\frac{1}{T}(\int_0^\{t} \mathrm{\frac{1}{t}+0.075+0.009t}\)\mathrm{d}t$
-             = $\frac{1}{T}(\ln (T)+0.075T+\frac{0.009}{2}T^2)$
-             = $\frac{\ln (T)}{T}+0.075+\frac{0.009}{2}T$
+$$NPV(r)=X+3000* D(1)-Y* D(2)+Z*D(3)$$
 
-If you deposited £3560 into a bank, how much will it pay out in 10 years time?
-
-To calculate this, we need the equation referenced above, $\bar{r}(t)$, P and T. £P=£3560, T=10 and $\bar{r}(t)$ = $\frac{\ln (T)}{T}+0.075+\frac{0.009}{2}T$
-
-Therefore, the pay out is equal to $£3560*(e^{(\frac{\ln (10)}{10}+0.075+\frac{0.009}{2}10)10})$, in 10 years time.
              
 ## Solved exercises
 
