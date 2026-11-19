@@ -15,6 +15,34 @@ For cashflows to be hedged against risk and be considered Reddington immune, mus
 
 Which means the $NPV(r_{0})$ function looks like a +ve quadratic function, the NPV=0 where $r=r_{0}$. This immunisation only accounts for changes in r close to the $r_{0}$ value, with large changes the function is different, and thus the NPV is no longer guaranteed hedged. 
 
+If you are 1st order/Reddington immunised with continuously compounded rate then you are 1st order/Reddington immunised with annual compounded rate. 
+Proof involves comparing both NPVs, with different discount rates - they do not retain the same deltas however the conditions still hold over both rates. 
+
+**Assets and Liabilites**
+
+Cashflows $\geq0$ are classified as assets and are denoted by:
+
+$$C_1^+,......,C_{n_+}^+$$,  at  $$t_1^+,......,t_{n_+}^+$$
+
+Cashflows $\leq0$ are classified as liabilities and are denoted in absolute value by:
+
+$$C_1^-,......,C_{n_-}^-$$,  at  $$t_1^-,......,t_{n_-}^-$$
+
+Present value of +ve cashflow is denoted as $NPV_+(r)$, present value of -ve cashflows is denoted as $NPV_(r)$.
+
+Then the overall $NPV(r)=NPV_+(r)-NPV_(r)$, as derivation is linear, we can rewrite the Reddington immunisation conditions in terms of +ve and -ve cashflows. 
+
+A series of cashflows are Reddington Immune if
+- $NPV_+(r_0)=NPV_-(r_0)$ - this means the assets and liabilities are balanced. 
+- $NPV_+'(r_0)=NPV_-'(r_0)$
+- $NPV_+''(r_0)\geq NPV_-''(r_0)$
+
+If   $$NPV_+(r)=\displaystyle\sum_{i=1}^{n_+} C_i^+e^{-rti^+}$$
+
+Then $$NPV_+'(r)=\displaystyle\sum_{i=1}^{n_+} C_i^+(-ti^+)e^{-rti^+}$$
+
+  
+
 ## My example
 
 Consider this series of cashflows:
@@ -49,8 +77,8 @@ and therefore $$Y=\frac{800e^{-0.075}+2000e^{-0.025}}{e^{-0.05}}$$
 To see if these cashflows are Reddington Immune, we need to calculate NPV''(r).
 
 $$NPV(r)=X+3000e^{-r}-4Ye^{-2r}+5400e^{-3r}$$, when r=2.5% - $$NPV(0.025)=X+3000e^{-0.025}-4Ye^{-0.05}+5400e^{-0.075}$$, subbing in X and Y.
-$$NPV(0.025)=200e^{-0.075}-1000e^{-0.025}+3000e^{-0.025}-3200e^{-0.075}+8000e^{-0.025}+5400e^{-0.075}$$ ?? check notes if he subbed in a and b
 
+$$NPV(0.025)=2400e^{-0.075}+10000e^{-0.025}\geq0$$, therefore with these values of X and Y, the cashflows are Reddington immune.
 
 
              
