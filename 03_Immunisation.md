@@ -37,9 +37,12 @@ A series of cashflows are Reddington Immune if
 - $NPV_+'(r_0)=NPV_-'(r_0)$
 - $NPV_+''(r_0)\geq NPV_-''(r_0)$
 
-If   $$NPV_+(r)=\displaystyle\sum_{i=1}^{n_+} C_i^+e^{-rti^+}$$
+If   $$NPV_+(r)=\displaystyle\sum_{i=1}^{n_+} C_i^+e^{-rt_i^+}$$
 
-Then $$NPV_+'(r)=\displaystyle\sum_{i=1}^{n_+} C_i^+(-ti^+)e^{-rti^+}$$
+Then $$NPV_+'(r)=\displaystyle\sum_{i=1}^{n_+} C_i^+(-t_i^+)e^{-rt_i^+}$$
+
+Then, the weighted average of $t_i^+$ weighted by present value of cashflows is called the duration and is denoted by this equation:
+$$\frac{NPV'(r)}{NPV(r)}=\displaystyle\sum_{i=1}^{n_+} t_i^+ \frac{C_i^+e^{-rt_i^+}}{\displaystyle\sum_{j=1}^{n_+} C_j^+e^{-rt_j^+}}$$
 
   
 
