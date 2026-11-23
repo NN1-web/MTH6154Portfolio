@@ -44,6 +44,10 @@ Then $$NPV_+'(r)=\displaystyle\sum_{i=1}^{n_+} C_i^+(-t_i^+)e^{-rt_i^+}$$
 Then, the weighted average of $t_i^+$ weighted by present value of cashflows is called the duration and is denoted by this equation:
 $$\frac{NPV'(r)}{NPV(r)}=\displaystyle\sum_{i=1}^{n_+} t_i^+ \frac{C_i^+e^{-rt_i^+}}{\displaystyle\sum_{j=1}^{n_+} C_j^+e^{-rt_j^+}}$$
 
+Convexity of a series of cashflows is:
+
+$$\frac{NPV''(r)}{NPV(r)}$$
+
   
 
 ## My example
@@ -87,75 +91,38 @@ $$NPV(0.025)=2400e^{-0.075}+10000e^{-0.025}\geq0$$, therefore with these values 
              
 ## Solved exercises
 
-### Exercise 1.1 (from Exercise Sheet 1)
+### Exercise 3.3 (from Exercise Sheet 3)
 
-Suppose you put £700 in a bank account with nominal interest rate 3%. 
-(a) How much money will be in the bank account three years from now if the interest is:
-(i)Compounded annually?
-(ii)Compounded monthly?
-(iii)Compounded semi-annually?
-(iv)Compounded continuously?
+a) For first order immunisation, we need to have all +ve NPV and durations equal to -ve NPV and durations. 
 
-Solutions:
-a)i) we use this formula referenced in the notes earlier: $(1+r*\frac{1}{365})^m$, this was adjusted to give a daily rate as interest rates are normally given annually, we need to change this back to an annual rate. 
-Thus the new formula is - $(1+r)^t$, with t = years instead. 
-Using the formula we obtain - $£700*(1+0.03)^3 \approx 764.91$
+$NPV_-(r)=NPV_+(r):$ (1) $20D(t_{10})+40D(t_{15})=PD(t_{25})+Q$, where $D(t)=e^{-0.07t}$
 
-a)ii) now convert to monthly rates - $(1+r*\frac{1}{12})^n$, with n= months instead. Therefore, solution - $£700*((1+0.03*\frac{1}{12})^{36} \approx 765.84$
++ve duration: $$\frac{25PD(t_{25})}{PD(t_{25})+Q}$$
 
-a)iii) convert to semi-annually - $£700*(1+0.03*\frac{1}{2})^6 \approx 765.41$
+-ve duration: $$\frac{200D(t_{10})+600D(t_{15})}{20D(t_{10})+40D(t_{15})}$$
 
-a)iv) use continuously compounded formula - $e^{rt}$, $£700*e^{0.03*3} \approx 765.92$
++ve duration = -ve duration: (2) $$\frac{25PD(t_{25})}{PD(t_{25})+Q}=\frac{200D(t_{10})+600D(t_{15})}{20D(t_{10})+40D(t_{15})}$$
 
-(b) Find the effective interest rates for each case (i)–(iv) from part (a).
+sub equation (1) into (2), then multiply out by $NPV_-(r)$, to get this:
 
-b)i) the effective i/r is annualised i/r for the rate given, it is the how much return that rate gives in a year. for i) the rate is already annualised, therefore the effective rate is simply 3%. we can use the formula0.0305 to check: the rate given annualised minus 1.
-$(1+0.03)-1=0.03$
+$$25PD(t_{25})=200D(t_{10})+600D(t_{15})$$, 
 
-b)ii) the rate given annualised - $(1+\frac{0.03}{12})^12-1 \approx 0.0304$
+$\therefore P=\frac{200D(t_{10})+600D(t_{15})}{25D(t_{25})}$, sub in $D(t)=e^{-0.07t}$ to get $P\approx71.191$ & $Q\approx11.558$
 
-b)iii) $(1+\frac{0.03}{2})^2-1 \approx 0.0302$
+b) to be Reddington immunised, $+ve convexity\geq-ve convexity$
 
-b)iv) set t = 1, $e^{0.03}-1 \approx 0.0305$
+-ve convexity: $$\frac{2000D(t_{10})+9000D(t_{15})}{20D(t_{10})+40D(t_{15})}$$
 
-(c)Suppose the inflation rate is 2%. Calculate the ‘inflation adjusted interest rate’ for each case (i)–(iv) from part (a).
++ve convexity: $$\frac{625PD(t_{25})}{PD(t_{25})+Q}$$
 
-c)i) the inflation adjusted i/r is simply the real rate, for this we can use the formula referenced above - $r=\frac{1+i}{1+\pi}-1$, where $i$ = nominal i/r, $\pi$ = inflation rate.
-Therefore, the real rate is equal to $r=\frac{1+0.03}{1+0.02}-1 \approx 0.009804$
++ve convexity = -ve convexity: $$\frac{625PD(t_{25})}{PD(t_{25})+Q}\geq\frac{2000D(t_{10})+9000D(t_{15})}{20D(t_{10})+40D(t_{15})}$$, sub in all variables.
 
-c)ii) we use the effective rate for one year for the rest of the questions. $r=\frac{1+0.0304}{1+0.02}-1 \approx 0.0102$
+Then, $323.119...\geq173.119...$, $\therefore$ the cashflows are also Reddington immunised.
 
-c)iii) $r=\frac{1+0.0302}{1+0.02}-1 \approx 0.01$
+c)The assets and liabilities would not be equal if instead they had a five year bond, which is a key qualification for the cashflows to be first order immunised. 
 
-c)iv) $r=\frac{1+0.0305}{1+0.02}-1 \approx 0.01029$
+### Exercise 3.4 (from Exercise Sheet 3)
 
-(d) Suppose interest is compounded semi-annually. How long will it take for the bank balance to grow to £1000?
-
-d) now we focus on the way we calculated semi-annually compounded rates in part iii) and work backwards with time t as the unknown. remembering that t in semi-annual rates is equal to 1/2 of a year.
-
-$$£700*(1+\frac{0.03}{2})^t=£100$$
-
-$$(1+\frac{0.03}{2})^t=£10/7$$
-
-$$t*\log(1+0.03/2)=\log(10/7)$$
-
-$$\therefore t=\frac{\log(10/7)}{\log(1+0.03/2)} \approx 23.956$$
-
-$$t/2 \approx 11.978 years$$
-
-### Exercise 1.3 (from Exercise Sheet 1)
-
-Suppose $P$ is deposited in a bank account with interest continuously compounded at rate $r(t)$. Write down an expression, in terms of 
-$r(t)$, for:
-(a)The yield curve $\bar{r}(t)$.
-
-(b)The bank balance at time $T$.
-
-a) using the reasoning used in the notes earlier, $$\bar{r}=\frac{1}{T}\int_0^\{t} \mathrm{r(t)}\,\mathrm{d}t$$, $\bar{r}(t)$ is basically the average of different i/r in the time period.
-
-b) using the reasoning in the notes earlier, bank balance at time T would be equal to, the return of the investment - using continuously compounded rates in terms of r(t), times by the orginal amount of money - here notated as £P.
-
-Thus the bank balance at time T is equal to - $$£P*e^{(\frac{1}{T}\int_0^\{t} \mathrm{r(t)}\,\mathrm{d}t)T}$$ 
 
 ## Spreadsheet
 
