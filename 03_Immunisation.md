@@ -121,9 +121,29 @@ Then, $323.119...\geq173.119...$, $\therefore$ the cashflows are also Reddington
 
 c)The assets and liabilities would not be equal if instead they had a five year bond, which is a key qualification for the cashflows to be first order immunised. 
 
-### Exercise 3.4 (from Exercise Sheet 3)
+### Exercise 3.6 (from Exercise Sheet 3)
 
+The method for this question is the same as the 3rd question, however this time we are showing the opposite.
 
+Make +ve NPV = -ve NPV, to find the two asset variables.
+
+(1) $$20D(t_{3.5})+18D(t_6)=XD(t_4)+YD(t_7)$$, where X and Y are the zero bond coupons and $D(t)=e^{-0.1t}$.
+
+Make +ve durations = -ve durations:
+
++ve duration: $\frac{4XD(t_4)+7YD(t_7)}{XD(t_4)+YD(t_7)}$
+
+-ve duration: $\frac{70D(t_{3.5})+108D(t_6)}{20D(t_{3.5})+18D(t_6)}$
+
+(2) $\frac{4XD(t_4)+7YD(t_7)}{XD(t_4)+YD(t_7)}=\frac{70D(t_{3.5})+108D(t_6)}{20D(t_{3.5})+18D(t_6)}$
+
+Sub (1) into (2), and multiply out by -ve NPV to get:
+
+(3) $$4XD(t_4)+7YD(t_7)=70D(t_{3.5})+108D(t_6)$$
+
+Rearrange (1) and sub into (3) to get:
+
+$$X=\frac{70D(t_{3.5})+18D(t_6)}{3D(t_4)}, \therefore X\approx29.442$$, and $$\therefore Y=8.5318$$
 ## Spreadsheet
 
 [01-InterestRates.xlsx](spreadsheets/01-InterestRates.xlsx):
