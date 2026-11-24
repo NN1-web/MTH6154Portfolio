@@ -144,6 +144,22 @@ Sub (1) into (2), and multiply out by -ve NPV to get:
 Rearrange (1) and sub into (3) to get:
 
 $$X=\frac{70D(t_{3.5})+18D(t_6)}{3D(t_4)}, \therefore X\approx29.442$$, and $$\therefore Y=8.5318$$
+
+Now calculate the convexity for the last condition:
+
++ve convexity: $\frac{16XD(t_4)+49YD(t_7)}{XD(t_4)+YD(t_7)}$
+
+-ve convexity: $\frac{245D(t_{3.5})+648D(t_6)}{20D(t_{3.5})+18D(t_6)}$
+
+For the cashflows to be Reddington immune, +ve convexity $\geq$ -ve convexity
+
+$$\therefore \frac{16XD(t_4)+49YD(t_7)}{XD(t_4)+YD(t_7)} \geq \frac{245D(t_{3.5})+648D(t_6)}{20D(t_{3.5})+18D(t_6)}$$
+For these cashflows to be Reddington immune. 
+
+Subbing in D(t) and X & Y:
+
+$21.83228...\ngeq22.03697...$, the condition is not fulfilled, and $\therefore$ these cashflows are not Reddington immune. 
+
 ## Spreadsheet
 
 [01-InterestRates.xlsx](spreadsheets/01-InterestRates.xlsx):
