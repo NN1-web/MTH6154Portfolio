@@ -1,54 +1,18 @@
-# 1. Immunisation
+# 4. Bonds
 
 [Back to contents](README.md)
 
 ## Summary
 
-**Reddington Imunisation**
+**Bonds**
 
-The NPV of different cashflows are dependent on r - NPV goes down and up when r changes. This is market risk, to try and control this unpredictability, we need the NPV to conform to certian conditions - this is called Reddington immunisation.
+Bonds are similar to loans, however they are standardised, not just between two parties, therefore they can be brought and sold in a market. 
 
-For cashflows to be hedged against risk and be considered Reddington immune, must fulfill these conditions:
-- $NPV(r_{0})=0$ (0-order immune)
-- $NPV'(r_{0})=0$ (1-order immune)
-- $NPV''(r_{0})\geq0$
+If you are a bond holder, the bond issuer states they will give back a larger sum at the end - face value, or give smaller regular fixed amounts as well - coupons. 
 
-Which means the $NPV(r_{0})$ function looks like a +ve quadratic function, the NPV=0 where $r=r_{0}$. This immunisation only accounts for changes in r close to the $r_{0}$ value, with large changes the function is different, and thus the NPV is no longer guaranteed hedged. 
+If i/r increases - value of the bond decreases, if i/r decreases - value of the bond increases. 
 
-If you are 1st order/Reddington immunised with continuously compounded rate then you are 1st order/Reddington immunised with annual compounded rate. 
-Proof involves comparing both NPVs, with different discount rates - they do not retain the same deltas however the conditions still hold over both rates. 
 
-**Assets and Liabilites**
-
-Cashflows $\geq0$ are classified as assets and are denoted by:
-
-$$C_1^+,......,C_{n_+}^+$$,  at  $$t_1^+,......,t_{n_+}^+$$
-
-Cashflows $\leq0$ are classified as liabilities and are denoted in absolute value by:
-
-$$C_1^-,......,C_{n_-}^-$$,  at  $$t_1^-,......,t_{n_-}^-$$
-
-Present value of +ve cashflow is denoted as $NPV_+(r)$, present value of -ve cashflows is denoted as $NPV_(r)$.
-
-Then the overall $NPV(r)=NPV_+(r)-NPV_(r)$, as derivation is linear, we can rewrite the Reddington immunisation conditions in terms of +ve and -ve cashflows. 
-
-A series of cashflows are Reddington Immune if
-- $NPV_+(r_0)=NPV_-(r_0)$ - this means the assets and liabilities are balanced. 
-- $NPV_+'(r_0)=NPV_-'(r_0)$
-- $NPV_+''(r_0)\geq NPV_-''(r_0)$
-
-If   $$NPV_+(r)=\displaystyle\sum_{i=1}^{n_+} C_i^+e^{-rt_i^+}$$
-
-Then $$NPV_+'(r)=\displaystyle\sum_{i=1}^{n_+} C_i^+(-t_i^+)e^{-rt_i^+}$$
-
-Then, the weighted average of $t_i^+$ weighted by present value of cashflows is called the duration and is denoted by this equation:
-$$\frac{NPV'(r)}{NPV(r)}=\displaystyle\sum_{i=1}^{n_+} t_i^+ \frac{C_i^+e^{-rt_i^+}}{\displaystyle\sum_{j=1}^{n_+} C_j^+e^{-rt_j^+}}$$
-
-Convexity of a series of cashflows is:
-
-$$\frac{NPV''(r)}{NPV(r)}$$
-
-  
 
 ## My example
 
