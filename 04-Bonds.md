@@ -12,6 +12,25 @@ If you are a bond holder, the bond issuer states they will give back a larger su
 
 If i/r increases - value of the bond decreases, if i/r decreases - value of the bond increases. 
 
+*Two types of bonds*
+
+- Corporate bonds: Company bonds, considered more credit risky
+- Sovereign Bonds: Government bonds, considered generally less risky
+
+Zero-coupon bond: no coupon bond - priced by $£PD(t)$, where P is the bond value at t=T, and $D(t)=e^{-rt}$. The proof includes showing that otherwise there would be arbitrage, proof by no-arbitrage. 
+
+Coupon bonds: bonds with coupons - priced by the NPV of all cashflows, including both coupons and face value, using instantaneous rates with the discount factor.
+
+The IRR in bonds is called the bond yield. 
+
+Spot rates are defined by: $$\frac{1}{(1+S_T)^T}=D(T)$$
+
+**Forward rate**
+The bank can promise a deposit rate of $fT_1,T_2$ (forward rate) for a deposit made at $T_1$ until $T_2$, with no risk .
+
+$$fT_1,T_2=\frac{(1+S_{T_1})^{1/2}}{(1+S_{T_2})^{1/4}}-1$$
+
+
 
 
 ## My example
