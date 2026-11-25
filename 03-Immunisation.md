@@ -162,8 +162,8 @@ $21.83228...\ngeq22.03697...$, the condition is not fulfilled, and $\therefore$ 
 
 ## Spreadsheet
 
-[01-InterestRates.xlsx](spreadsheets/01-InterestRates.xlsx):
+[03-Immunisation.xlsx](spreadsheets/03-Immunisation.xlsx):
 
-This excel file, calculates the return of a deposit £P after time t and the new payoff of different i/r which are Compounded annually, Compounded monthly, Compounded semi-annually, Compounded continuously.
+This excel file calculates for both +ve and -ve cashflows: NPV, duration and convexity - shown by the last three yellow tables. 
 
-You need to input three variables: in cell B7 input r, cell B8 input t, cell B9 input P.
+Inputting: r in cell B2, Liabilities in column D and the liabilities t in column E, Assets in column H and the assets t in column I. All the blue tables.
