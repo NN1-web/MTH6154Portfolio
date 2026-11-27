@@ -35,6 +35,16 @@ $$fT_1,T_2=\frac{(1+S_{T_1})^{1/2}}{(1+S_{T_2})^{1/4}}-1$$
 
 ## My example
 
+Imagine we are buying a coupon bond, the company signs a paper, with face value 650k in 3 years, with a coupon of 5%. Calculate the fair price for this Bond.
+
+We need to calculate the NPV of these cashflows.
+
+
+
+
+
+
+
 Consider this series of cashflows:
 - Deposit of £X
 - Cash in flow of £3000, in year 1
@@ -68,13 +78,27 @@ To see if these cashflows are Reddington Immune, we need to calculate NPV''(r).
 
 $$NPV(r)=X+3000e^{-r}-4Ye^{-2r}+5400e^{-3r}$$, when r=2.5% - $$NPV(0.025)=X+3000e^{-0.025}-4Ye^{-0.05}+5400e^{-0.075}$$, subbing in X and Y.
 
-$$NPV(0.025)=2400e^{-0.075}+10000e^{-0.025}\geq0$$, therefore with these values of X and Y, the cashflows are Reddington immune.
+$$NPV(0.025)=2400e^{-0.075}+10000e^{-0.025}\geq0$$, therefore with these values of X and Y, the cashflows are Redding
 
 
              
 ## Solved exercises
 
-### Exercise 3.3 (from Exercise Sheet 3)
+### Exercise 4.1 (from Exercise Sheet 4)
+
+1) Face value = £200k, c=6% - therefore the sum of yearly coupons will be - $0.06*200k=12k$,
+since they are paid semi-annually, the coupon paid every six months is equal to $12k/2=6k$
+
+Since it is a 3-year bond, they pay two coupons each year and then in the last year they pay the face value plus the last coupon.
+
+$\therefore$ the cashflows are as followed: (6k, 6k, 6k, 6k, 6k, 206k), each interval being 6M. 
+
+redeemable at par = 
+
+
+
+
+
 
 a) For first order immunisation, we need to have all +ve NPV and durations equal to -ve NPV and durations. 
 
@@ -104,7 +128,21 @@ Then, $323.119...\geq173.119...$, $\therefore$ the cashflows are also Reddington
 
 c)The assets and liabilities would not be equal if instead they had a five year bond, which is a key qualification for the cashflows to be first order immunised. 
 
-### Exercise 3.6 (from Exercise Sheet 3)
+### Exercise 4.3 (from Exercise Sheet 4)
+
+3) The connection between the discount factor and zero-coupon bonds, is the pricing of these bonds. Let’s say the face value of the bond is £P, the i/r is r, and t is time.
+
+The price of the bond is equal to the NPV of the bond, which is:
+
+$$D(t)P$$, where D(t) is the discount factor, for example for instantaneous rates, $D(t)=e^{-rt}$
+
+
+
+
+
+
+
+
 
 The method for this question is the same as the 3rd question, however this time we are showing the opposite.
 
